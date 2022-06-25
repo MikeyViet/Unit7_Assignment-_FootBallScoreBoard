@@ -328,6 +328,7 @@
             this.updateControllerButton.Text = "Update ScoreBoard";
             this.updateControllerButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.updateControllerButton.UseVisualStyleBackColor = false;
+            this.updateControllerButton.Click += new System.EventHandler(this.updateControllerButton_Click);
             // 
             // TrailBlazer_ScoreBoard
             // 

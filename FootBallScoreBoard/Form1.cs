@@ -76,5 +76,13 @@ namespace FootBallScoreBoard
         {
 
         }
+
+        private void updateControllerButton_Click(object sender, EventArgs e)
+        {
+            Form2 controllerForScoreBoard = new Form2();
+
+            controllerForScoreBoard.Show();
+
+        }
     }
 }
