@@ -295,10 +295,13 @@
             // 
             // tccdMascotImageBox
             // 
+            this.tccdMascotImageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tccdMascotImageBox.ErrorImage = null;
             this.tccdMascotImageBox.Image = ((System.Drawing.Image)(resources.GetObject("tccdMascotImageBox.Image")));
-            this.tccdMascotImageBox.Location = new System.Drawing.Point(519, 220);
+            this.tccdMascotImageBox.Location = new System.Drawing.Point(507, 213);
             this.tccdMascotImageBox.Name = "tccdMascotImageBox";
-            this.tccdMascotImageBox.Size = new System.Drawing.Size(545, 497);
+            this.tccdMascotImageBox.Size = new System.Drawing.Size(540, 454);
+            this.tccdMascotImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tccdMascotImageBox.TabIndex = 17;
             this.tccdMascotImageBox.TabStop = false;
             // 
@@ -308,7 +311,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1574, 729);
-            this.Controls.Add(this.tccdMascotImageBox);
             this.Controls.Add(this.numQuarter);
             this.Controls.Add(this.homeTimeOutNum);
             this.Controls.Add(this.homeTimeOutLabel);
@@ -326,10 +328,10 @@
             this.Controls.Add(this.toGoLabel);
             this.Controls.Add(this.downLabel);
             this.Controls.Add(this.qtrLabel);
+            this.Controls.Add(this.tccdMascotImageBox);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).EndInit();
