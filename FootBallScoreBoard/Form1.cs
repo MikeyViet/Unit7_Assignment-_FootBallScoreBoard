@@ -17,17 +17,17 @@ namespace FootBallScoreBoard
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void homeTeamLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void homeTeamScore_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void numDown_Click(object sender, EventArgs e)
         {
 
         }
@@ -37,7 +37,7 @@ namespace FootBallScoreBoard
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void toGoLabel_Click(object sender, EventArgs e)
         {
 
         }
@@ -47,7 +47,27 @@ namespace FootBallScoreBoard
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void numYardsToGo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void downLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void qtrLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numQuarter_Click(object sender, EventArgs e)
         {
 
         }

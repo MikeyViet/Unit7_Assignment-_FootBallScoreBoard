@@ -29,75 +29,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.homeTeamLable = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.homeTeamLabel = new System.Windows.Forms.Label();
             this.visitorTeamLable = new System.Windows.Forms.Label();
             this.homeTeamScore = new System.Windows.Forms.Label();
             this.visitorTeamScore = new System.Windows.Forms.Label();
             this.qtrLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.numQuarter = new System.Windows.Forms.Label();
+            this.numDown = new System.Windows.Forms.Label();
+            this.numYardsToGo = new System.Windows.Forms.Label();
+            this.downLabel = new System.Windows.Forms.Label();
+            this.toGoLabel = new System.Windows.Forms.Label();
+            this.clock = new System.Windows.Forms.GroupBox();
+            this.numBallPosition = new System.Windows.Forms.Label();
+            this.ballPositionLabel = new System.Windows.Forms.Label();
+            this.visitorTimeOutLabel = new System.Windows.Forms.Label();
+            this.visitorTimeOutNum = new System.Windows.Forms.Label();
+            this.homeTimeOutNum = new System.Windows.Forms.Label();
+            this.homeTimeOutLabel = new System.Windows.Forms.Label();
+            this.tccdMascotImageBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // homeTeamLable
+            // homeTeamLabel
             // 
-            this.homeTeamLable.AutoSize = true;
-            this.homeTeamLable.Font = new System.Drawing.Font("Tahoma", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeTeamLable.ForeColor = System.Drawing.Color.White;
-            this.homeTeamLable.Location = new System.Drawing.Point(21, 19);
-            this.homeTeamLable.MaximumSize = new System.Drawing.Size(700, 200);
-            this.homeTeamLable.Name = "homeTeamLable";
-            this.homeTeamLable.Size = new System.Drawing.Size(266, 90);
-            this.homeTeamLable.TabIndex = 0;
-            this.homeTeamLable.Text = "HOME";
-            this.homeTeamLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.homeTeamLable.Click += new System.EventHandler(this.label1_Click);
+            this.homeTeamLabel.AutoSize = true;
+            this.homeTeamLabel.Font = new System.Drawing.Font("Tahoma", 42.125F, System.Drawing.FontStyle.Bold);
+            this.homeTeamLabel.ForeColor = System.Drawing.Color.White;
+            this.homeTeamLabel.Location = new System.Drawing.Point(24, -15);
+            this.homeTeamLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.homeTeamLabel.MaximumSize = new System.Drawing.Size(700, 200);
+            this.homeTeamLabel.Name = "homeTeamLabel";
+            this.homeTeamLabel.Size = new System.Drawing.Size(401, 136);
+            this.homeTeamLabel.TabIndex = 0;
+            this.homeTeamLabel.Text = "HOME";
+            this.homeTeamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.homeTeamLabel.Click += new System.EventHandler(this.homeTeamLabel_Click);
             // 
             // visitorTeamLable
             // 
             this.visitorTeamLable.AutoSize = true;
-            this.visitorTeamLable.Font = new System.Drawing.Font("Tahoma", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visitorTeamLable.Font = new System.Drawing.Font("Tahoma", 42.125F, System.Drawing.FontStyle.Bold);
             this.visitorTeamLable.ForeColor = System.Drawing.Color.White;
-            this.visitorTeamLable.Location = new System.Drawing.Point(843, 19);
+            this.visitorTeamLable.Location = new System.Drawing.Point(1048, -15);
+            this.visitorTeamLable.Margin = new System.Windows.Forms.Padding(0);
             this.visitorTeamLable.MaximumSize = new System.Drawing.Size(700, 200);
             this.visitorTeamLable.Name = "visitorTeamLable";
-            this.visitorTeamLable.Size = new System.Drawing.Size(367, 90);
+            this.visitorTeamLable.Size = new System.Drawing.Size(553, 136);
             this.visitorTeamLable.TabIndex = 1;
             this.visitorTeamLable.Text = "VISITOR";
-            this.visitorTeamLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.visitorTeamLable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.visitorTeamLable.Click += new System.EventHandler(this.visitorTeamLable_Click);
             // 
             // homeTeamScore
             // 
             this.homeTeamScore.AutoSize = true;
-            this.homeTeamScore.BackColor = System.Drawing.SystemColors.ControlText;
-            this.homeTeamScore.Font = new System.Drawing.Font("Bahnschrift", 55.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeTeamScore.BackColor = System.Drawing.SystemColors.MenuText;
+            this.homeTeamScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.homeTeamScore.Font = new System.Drawing.Font("Bahnschrift", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeTeamScore.ForeColor = System.Drawing.Color.Yellow;
-            this.homeTeamScore.Location = new System.Drawing.Point(43, 80);
+            this.homeTeamScore.Location = new System.Drawing.Point(58, 110);
             this.homeTeamScore.Margin = new System.Windows.Forms.Padding(0);
-            this.homeTeamScore.MaximumSize = new System.Drawing.Size(250, 215);
+            this.homeTeamScore.MaximumSize = new System.Drawing.Size(350, 300);
             this.homeTeamScore.Name = "homeTeamScore";
-            this.homeTeamScore.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.homeTeamScore.Size = new System.Drawing.Size(235, 178);
+            this.homeTeamScore.Padding = new System.Windows.Forms.Padding(3);
+            this.homeTeamScore.Size = new System.Drawing.Size(313, 239);
             this.homeTeamScore.TabIndex = 2;
             this.homeTeamScore.Text = "00";
             this.homeTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.homeTeamScore.Click += new System.EventHandler(this.label3_Click);
+            this.homeTeamScore.Click += new System.EventHandler(this.homeTeamScore_Click);
             // 
             // visitorTeamScore
             // 
             this.visitorTeamScore.AutoSize = true;
-            this.visitorTeamScore.BackColor = System.Drawing.SystemColors.ControlText;
-            this.visitorTeamScore.Font = new System.Drawing.Font("Bahnschrift", 55.125F, System.Drawing.FontStyle.Bold);
+            this.visitorTeamScore.BackColor = System.Drawing.SystemColors.MenuText;
+            this.visitorTeamScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.visitorTeamScore.Font = new System.Drawing.Font("Bahnschrift", 72F, System.Drawing.FontStyle.Bold);
             this.visitorTeamScore.ForeColor = System.Drawing.Color.Yellow;
-            this.visitorTeamScore.Location = new System.Drawing.Point(950, 80);
+            this.visitorTeamScore.Location = new System.Drawing.Point(1211, 110);
             this.visitorTeamScore.Margin = new System.Windows.Forms.Padding(0);
-            this.visitorTeamScore.MaximumSize = new System.Drawing.Size(250, 215);
+            this.visitorTeamScore.MaximumSize = new System.Drawing.Size(350, 300);
             this.visitorTeamScore.Name = "visitorTeamScore";
-            this.visitorTeamScore.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.visitorTeamScore.Size = new System.Drawing.Size(235, 178);
+            this.visitorTeamScore.Size = new System.Drawing.Size(307, 233);
             this.visitorTeamScore.TabIndex = 3;
             this.visitorTeamScore.Text = "00";
             this.visitorTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,99 +119,220 @@
             // qtrLabel
             // 
             this.qtrLabel.AutoSize = true;
-            this.qtrLabel.Font = new System.Drawing.Font("Tahoma", 28.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtrLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
             this.qtrLabel.ForeColor = System.Drawing.Color.White;
-            this.qtrLabel.Location = new System.Drawing.Point(481, 227);
+            this.qtrLabel.Location = new System.Drawing.Point(390, 475);
             this.qtrLabel.Margin = new System.Windows.Forms.Padding(0);
             this.qtrLabel.Name = "qtrLabel";
-            this.qtrLabel.Size = new System.Drawing.Size(182, 90);
+            this.qtrLabel.Size = new System.Drawing.Size(114, 77);
             this.qtrLabel.TabIndex = 4;
             this.qtrLabel.Text = "QTR";
             this.qtrLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.qtrLabel.Click += new System.EventHandler(this.qtrLabel_Click);
             // 
-            // label6
+            // numQuarter
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 44F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(641, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 141);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numQuarter.AutoSize = true;
+            this.numQuarter.BackColor = System.Drawing.SystemColors.ControlText;
+            this.numQuarter.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.numQuarter.ForeColor = System.Drawing.Color.Yellow;
+            this.numQuarter.Location = new System.Drawing.Point(375, 543);
+            this.numQuarter.Margin = new System.Windows.Forms.Padding(0);
+            this.numQuarter.Name = "numQuarter";
+            this.numQuarter.Size = new System.Drawing.Size(137, 167);
+            this.numQuarter.TabIndex = 5;
+            this.numQuarter.Text = "0";
+            this.numQuarter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numQuarter.Click += new System.EventHandler(this.numQuarter_Click);
             // 
-            // label7
+            // numDown
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift", 46F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Yellow;
-            this.label7.Location = new System.Drawing.Point(101, 426);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 147);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "0";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.numDown.AutoSize = true;
+            this.numDown.BackColor = System.Drawing.SystemColors.ControlText;
+            this.numDown.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.numDown.ForeColor = System.Drawing.Color.Yellow;
+            this.numDown.Location = new System.Drawing.Point(1070, 543);
+            this.numDown.Margin = new System.Windows.Forms.Padding(0);
+            this.numDown.MaximumSize = new System.Drawing.Size(137, 167);
+            this.numDown.Name = "numDown";
+            this.numDown.Size = new System.Drawing.Size(137, 167);
+            this.numDown.TabIndex = 6;
+            this.numDown.Text = "0";
+            this.numDown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numDown.Click += new System.EventHandler(this.numDown_Click);
             // 
-            // label8
+            // numYardsToGo
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift", 46F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Yellow;
-            this.label8.Location = new System.Drawing.Point(941, 426);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(196, 147);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "00";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.numYardsToGo.AutoSize = true;
+            this.numYardsToGo.BackColor = System.Drawing.SystemColors.ControlText;
+            this.numYardsToGo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.numYardsToGo.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.numYardsToGo.ForeColor = System.Drawing.Color.Yellow;
+            this.numYardsToGo.Location = new System.Drawing.Point(1317, 543);
+            this.numYardsToGo.Name = "numYardsToGo";
+            this.numYardsToGo.Size = new System.Drawing.Size(203, 169);
+            this.numYardsToGo.TabIndex = 7;
+            this.numYardsToGo.Text = "00";
+            this.numYardsToGo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.numYardsToGo.Click += new System.EventHandler(this.numYardsToGo_Click);
             // 
-            // label9
+            // downLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(210, 465);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(245, 77);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "DOWN";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.downLabel.AutoSize = true;
+            this.downLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.downLabel.ForeColor = System.Drawing.Color.White;
+            this.downLabel.Location = new System.Drawing.Point(1067, 475);
+            this.downLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.downLabel.Name = "downLabel";
+            this.downLabel.Size = new System.Drawing.Size(154, 77);
+            this.downLabel.TabIndex = 8;
+            this.downLabel.Text = "DOWN";
+            this.downLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.downLabel.Click += new System.EventHandler(this.downLabel_Click);
             // 
-            // label10
+            // toGoLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(722, 465);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(237, 77);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "TO GO";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.toGoLabel.AutoSize = true;
+            this.toGoLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.toGoLabel.ForeColor = System.Drawing.Color.White;
+            this.toGoLabel.Location = new System.Drawing.Point(1341, 475);
+            this.toGoLabel.Name = "toGoLabel";
+            this.toGoLabel.Size = new System.Drawing.Size(153, 77);
+            this.toGoLabel.TabIndex = 9;
+            this.toGoLabel.Text = "TO GO";
+            this.toGoLabel.Click += new System.EventHandler(this.toGoLabel_Click);
+            // 
+            // clock
+            // 
+            this.clock.Location = new System.Drawing.Point(500, 12);
+            this.clock.Margin = new System.Windows.Forms.Padding(0);
+            this.clock.Name = "clock";
+            this.clock.Size = new System.Drawing.Size(560, 188);
+            this.clock.TabIndex = 10;
+            this.clock.TabStop = false;
+            this.clock.Text = "groupBox1";
+            // 
+            // numBallPosition
+            // 
+            this.numBallPosition.AutoSize = true;
+            this.numBallPosition.BackColor = System.Drawing.SystemColors.ControlText;
+            this.numBallPosition.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.numBallPosition.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.numBallPosition.ForeColor = System.Drawing.Color.Yellow;
+            this.numBallPosition.Location = new System.Drawing.Point(58, 543);
+            this.numBallPosition.Margin = new System.Windows.Forms.Padding(0);
+            this.numBallPosition.Name = "numBallPosition";
+            this.numBallPosition.Size = new System.Drawing.Size(203, 169);
+            this.numBallPosition.TabIndex = 11;
+            this.numBallPosition.Text = "00";
+            this.numBallPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ballPositionLabel
+            // 
+            this.ballPositionLabel.AutoSize = true;
+            this.ballPositionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.ballPositionLabel.ForeColor = System.Drawing.Color.White;
+            this.ballPositionLabel.Location = new System.Drawing.Point(54, 466);
+            this.ballPositionLabel.Name = "ballPositionLabel";
+            this.ballPositionLabel.Size = new System.Drawing.Size(205, 77);
+            this.ballPositionLabel.TabIndex = 12;
+            this.ballPositionLabel.Text = "BALL ON";
+            this.ballPositionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // visitorTimeOutLabel
+            // 
+            this.visitorTimeOutLabel.AutoSize = true;
+            this.visitorTimeOutLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.visitorTimeOutLabel.ForeColor = System.Drawing.Color.White;
+            this.visitorTimeOutLabel.Location = new System.Drawing.Point(1085, 146);
+            this.visitorTimeOutLabel.Name = "visitorTimeOutLabel";
+            this.visitorTimeOutLabel.Size = new System.Drawing.Size(107, 77);
+            this.visitorTimeOutLabel.TabIndex = 14;
+            this.visitorTimeOutLabel.Text = "TOL";
+            this.visitorTimeOutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // visitorTimeOutNum
+            // 
+            this.visitorTimeOutNum.AutoSize = true;
+            this.visitorTimeOutNum.BackColor = System.Drawing.SystemColors.ControlText;
+            this.visitorTimeOutNum.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.visitorTimeOutNum.ForeColor = System.Drawing.Color.Yellow;
+            this.visitorTimeOutNum.Location = new System.Drawing.Point(1070, 213);
+            this.visitorTimeOutNum.Margin = new System.Windows.Forms.Padding(0);
+            this.visitorTimeOutNum.MaximumSize = new System.Drawing.Size(137, 167);
+            this.visitorTimeOutNum.Name = "visitorTimeOutNum";
+            this.visitorTimeOutNum.Size = new System.Drawing.Size(137, 167);
+            this.visitorTimeOutNum.TabIndex = 13;
+            this.visitorTimeOutNum.Text = "0";
+            this.visitorTimeOutNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // homeTimeOutNum
+            // 
+            this.homeTimeOutNum.AutoSize = true;
+            this.homeTimeOutNum.BackColor = System.Drawing.SystemColors.ControlText;
+            this.homeTimeOutNum.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 52F, System.Drawing.FontStyle.Bold);
+            this.homeTimeOutNum.ForeColor = System.Drawing.Color.Yellow;
+            this.homeTimeOutNum.Location = new System.Drawing.Point(375, 213);
+            this.homeTimeOutNum.Margin = new System.Windows.Forms.Padding(0);
+            this.homeTimeOutNum.MaximumSize = new System.Drawing.Size(137, 167);
+            this.homeTimeOutNum.Name = "homeTimeOutNum";
+            this.homeTimeOutNum.Size = new System.Drawing.Size(137, 167);
+            this.homeTimeOutNum.TabIndex = 15;
+            this.homeTimeOutNum.Text = "0";
+            this.homeTimeOutNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // homeTimeOutLabel
+            // 
+            this.homeTimeOutLabel.AutoSize = true;
+            this.homeTimeOutLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.homeTimeOutLabel.ForeColor = System.Drawing.Color.White;
+            this.homeTimeOutLabel.Location = new System.Drawing.Point(390, 146);
+            this.homeTimeOutLabel.Name = "homeTimeOutLabel";
+            this.homeTimeOutLabel.Size = new System.Drawing.Size(107, 77);
+            this.homeTimeOutLabel.TabIndex = 16;
+            this.homeTimeOutLabel.Text = "TOL";
+            this.homeTimeOutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tccdMascotImageBox
+            // 
+            this.tccdMascotImageBox.Image = ((System.Drawing.Image)(resources.GetObject("tccdMascotImageBox.Image")));
+            this.tccdMascotImageBox.Location = new System.Drawing.Point(519, 220);
+            this.tccdMascotImageBox.Name = "tccdMascotImageBox";
+            this.tccdMascotImageBox.Size = new System.Drawing.Size(545, 497);
+            this.tccdMascotImageBox.TabIndex = 17;
+            this.tccdMascotImageBox.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1224, 588);
-            this.Controls.Add(this.visitorTeamLable);
-            this.Controls.Add(this.homeTeamLable);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.qtrLabel);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1574, 729);
+            this.Controls.Add(this.tccdMascotImageBox);
+            this.Controls.Add(this.numQuarter);
+            this.Controls.Add(this.homeTimeOutNum);
+            this.Controls.Add(this.homeTimeOutLabel);
+            this.Controls.Add(this.numDown);
+            this.Controls.Add(this.numYardsToGo);
+            this.Controls.Add(this.visitorTimeOutNum);
+            this.Controls.Add(this.visitorTimeOutLabel);
+            this.Controls.Add(this.numBallPosition);
+            this.Controls.Add(this.ballPositionLabel);
+            this.Controls.Add(this.clock);
             this.Controls.Add(this.visitorTeamScore);
             this.Controls.Add(this.homeTeamScore);
+            this.Controls.Add(this.visitorTeamLable);
+            this.Controls.Add(this.homeTeamLabel);
+            this.Controls.Add(this.toGoLabel);
+            this.Controls.Add(this.downLabel);
+            this.Controls.Add(this.qtrLabel);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,16 +340,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Label homeTeamLable;
+        private System.Windows.Forms.Label homeTeamLabel;
         private System.Windows.Forms.Label visitorTeamLable;
         private System.Windows.Forms.Label homeTeamScore;
         private System.Windows.Forms.Label visitorTeamScore;
         private System.Windows.Forms.Label qtrLabel;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label numQuarter;
+        private System.Windows.Forms.Label numDown;
+        private System.Windows.Forms.Label numYardsToGo;
+        private System.Windows.Forms.Label downLabel;
+        private System.Windows.Forms.Label toGoLabel;
+        private System.Windows.Forms.GroupBox clock;
+        private System.Windows.Forms.Label numBallPosition;
+        private System.Windows.Forms.Label ballPositionLabel;
+        private System.Windows.Forms.Label visitorTimeOutLabel;
+        private System.Windows.Forms.Label visitorTimeOutNum;
+        private System.Windows.Forms.Label homeTimeOutNum;
+        private System.Windows.Forms.Label homeTimeOutLabel;
+        private System.Windows.Forms.PictureBox tccdMascotImageBox;
     }
 }
 
