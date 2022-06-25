@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootBallScoreBoard
 {
-    public partial class Form1 : Form
+    public partial class TrailBlazer_ScoreBoard : Form
     {
-        public Form1()
+        public TrailBlazer_ScoreBoard()
         {
             InitializeComponent();
         }
@@ -68,6 +68,11 @@ namespace FootBallScoreBoard
         }
 
         private void numQuarter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tccdMascotImageBox_Click(object sender, EventArgs e)
         {
 
         }

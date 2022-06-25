@@ -1,6 +1,6 @@
 ﻿namespace FootBallScoreBoard
 {
-    partial class Form1
+    partial class TrailBlazer_ScoreBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrailBlazer_ScoreBoard));
             this.homeTeamLabel = new System.Windows.Forms.Label();
             this.visitorTeamLable = new System.Windows.Forms.Label();
             this.homeTeamScore = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.homeTimeOutNum = new System.Windows.Forms.Label();
             this.homeTimeOutLabel = new System.Windows.Forms.Label();
             this.tccdMascotImageBox = new System.Windows.Forms.PictureBox();
+            this.updateControllerButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -298,19 +299,44 @@
             this.tccdMascotImageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tccdMascotImageBox.ErrorImage = null;
             this.tccdMascotImageBox.Image = ((System.Drawing.Image)(resources.GetObject("tccdMascotImageBox.Image")));
+            this.tccdMascotImageBox.InitialImage = null;
             this.tccdMascotImageBox.Location = new System.Drawing.Point(507, 213);
             this.tccdMascotImageBox.Name = "tccdMascotImageBox";
+            this.tccdMascotImageBox.Padding = new System.Windows.Forms.Padding(1);
             this.tccdMascotImageBox.Size = new System.Drawing.Size(540, 454);
             this.tccdMascotImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tccdMascotImageBox.TabIndex = 17;
             this.tccdMascotImageBox.TabStop = false;
+            this.tccdMascotImageBox.Click += new System.EventHandler(this.tccdMascotImageBox_Click);
             // 
-            // Form1
+            // updateControllerButton
+            // 
+            this.updateControllerButton.AutoSize = true;
+            this.updateControllerButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.updateControllerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateControllerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.updateControllerButton.FlatAppearance.BorderSize = 0;
+            this.updateControllerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.updateControllerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
+            this.updateControllerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateControllerButton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.updateControllerButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.updateControllerButton.Location = new System.Drawing.Point(507, 673);
+            this.updateControllerButton.Name = "updateControllerButton";
+            this.updateControllerButton.Size = new System.Drawing.Size(540, 47);
+            this.updateControllerButton.TabIndex = 18;
+            this.updateControllerButton.Text = "Update ScoreBoard";
+            this.updateControllerButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.updateControllerButton.UseVisualStyleBackColor = false;
+            // 
+            // TrailBlazer_ScoreBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1574, 729);
+            this.Controls.Add(this.updateControllerButton);
+            this.Controls.Add(this.tccdMascotImageBox);
             this.Controls.Add(this.numQuarter);
             this.Controls.Add(this.homeTimeOutNum);
             this.Controls.Add(this.homeTimeOutLabel);
@@ -328,11 +354,15 @@
             this.Controls.Add(this.toGoLabel);
             this.Controls.Add(this.downLabel);
             this.Controls.Add(this.qtrLabel);
-            this.Controls.Add(this.tccdMascotImageBox);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "TrailBlazer_ScoreBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TrailBlazers ScoreBoard";
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).EndInit();
             this.ResumeLayout(false);
@@ -360,6 +390,7 @@
         private System.Windows.Forms.Label homeTimeOutNum;
         private System.Windows.Forms.Label homeTimeOutLabel;
         private System.Windows.Forms.PictureBox tccdMascotImageBox;
+        private System.Windows.Forms.Button updateControllerButton;
     }
 }
 
