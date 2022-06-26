@@ -319,10 +319,12 @@
             this.updateControllerButton.UseVisualStyleBackColor = false;
             this.updateControllerButton.Click += new System.EventHandler(this.updateControllerButton_Click);
             // 
-            // TrailBlazer_ScoreBoard
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1574, 729);
             this.Controls.Add(this.updateControllerButton);
@@ -348,11 +350,10 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "TrailBlazer_ScoreBoard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1600, 800);
+            this.Name = "Form1";
             this.Text = "TrailBlazers ScoreBoard";
-            this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).EndInit();
             this.ResumeLayout(false);
@@ -381,6 +382,7 @@
         private System.Windows.Forms.Label homeTimeOutLabel;
         private System.Windows.Forms.PictureBox tccdMascotImageBox;
         private System.Windows.Forms.Button updateControllerButton;
+
     }
 }
 

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FootBallScoreBoard
@@ -13,21 +6,36 @@ namespace FootBallScoreBoard
     public partial class Form1 : Form
     {
         private string HomeTeamScore { get; set; }
+        private string VisitorTeamScore { get; set; }
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        public void updateConfirm_Click(string score, string score2, string homeTol, string visitorTol, string ballPosition, string numQtr, string numDowns, string yardsToGo)
+
+        {
+            this.homeTeamScore.Text = score;
+            this.visitorTeamScore.Text = score2;
+            this.homeTimeOutNum.Text = homeTol;
+            this.visitorTimeOutNum.Text = visitorTol;
+            this.numBallPosition.Text = ballPosition;
+            this.numQuarter.Text = numQtr;
+            this.numDown.Text = numDowns;
+            this.numYardsToGo.Text = yardsToGo;
+
+
+        }
+
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        public void updateScoreBoard(string score)
-        {
-            this.homeTeamScore.Text = score;
-        }
+
         private void updateControllerButton_Click(object sender, EventArgs e)
         {
             Form2 controllerForScoreBoard = new Form2();
@@ -37,6 +45,10 @@ namespace FootBallScoreBoard
 
 
 
+
+
         }
     }
+
 }
+

@@ -64,7 +64,6 @@
             this.controllerLabel.TabIndex = 12;
             this.controllerLabel.Text = "ScoreBoard Controller";
             this.controllerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.controllerLabel.Click += new System.EventHandler(this.label7_Click);
             // 
             // homeTeamUpdateLabel
             // 
@@ -302,10 +301,10 @@
             // 
             this.updateConfirm.BackColor = System.Drawing.Color.Aqua;
             this.updateConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.updateConfirm.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateConfirm.Location = new System.Drawing.Point(368, 363);
+            this.updateConfirm.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateConfirm.Location = new System.Drawing.Point(362, 363);
             this.updateConfirm.Name = "updateConfirm";
-            this.updateConfirm.Size = new System.Drawing.Size(118, 89);
+            this.updateConfirm.Size = new System.Drawing.Size(128, 89);
             this.updateConfirm.TabIndex = 33;
             this.updateConfirm.Text = "DONE";
             this.updateConfirm.UseVisualStyleBackColor = false;
@@ -315,6 +314,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -341,11 +342,9 @@
             this.Controls.Add(this.homeTeamUpdateLabel);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(881, 535);
+            this.MinimumSize = new System.Drawing.Size(881, 535);
             this.Name = "Form2";
             this.Text = "Controller for ScoreBoard";
-            this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

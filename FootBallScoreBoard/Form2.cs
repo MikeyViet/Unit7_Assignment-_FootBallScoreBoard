@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FootBallScoreBoard
@@ -22,16 +15,12 @@ namespace FootBallScoreBoard
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void updateConfirm_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
 
-            frm.updateScoreBoard(homeTeamUpdateInput.Text);
+            Form1 frm = new Form1();
+            frm.updateConfirm_Click(homeTeamUpdateInput.Text, visitorTeamUpdateInput.Text, homeTeamUpdateTolInput.Text, visitorTeamUpdateTolInput.Text, ballPositionUpdateInput.Text, qtrUpdateInput.Text, ballPositionUpdateInput.Text, toGoUpdateInput.Text);
+
 
             frm.Show();
             this.Hide();
