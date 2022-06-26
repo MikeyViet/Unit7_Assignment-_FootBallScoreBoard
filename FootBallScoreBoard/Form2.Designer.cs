@@ -48,6 +48,7 @@
             this.downUpdateInput = new System.Windows.Forms.TextBox();
             this.toGoUpdateLabel = new System.Windows.Forms.Label();
             this.toGoUpdateInput = new System.Windows.Forms.TextBox();
+            this.updateConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // controllerLabel
@@ -134,7 +135,7 @@
             this.ballPositionUpdateLabel.AutoSize = true;
             this.ballPositionUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ballPositionUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.ballPositionUpdateLabel.Location = new System.Drawing.Point(76, 369);
+            this.ballPositionUpdateLabel.Location = new System.Drawing.Point(38, 369);
             this.ballPositionUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.ballPositionUpdateLabel.Name = "ballPositionUpdateLabel";
             this.ballPositionUpdateLabel.Size = new System.Drawing.Size(113, 36);
@@ -147,7 +148,7 @@
             this.ballPositionUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ballPositionUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ballPositionUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
-            this.ballPositionUpdateInput.Location = new System.Drawing.Point(73, 408);
+            this.ballPositionUpdateInput.Location = new System.Drawing.Point(35, 408);
             this.ballPositionUpdateInput.Multiline = true;
             this.ballPositionUpdateInput.Name = "ballPositionUpdateInput";
             this.ballPositionUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -224,7 +225,7 @@
             this.qtrUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.qtrUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtrUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
-            this.qtrUpdateInput.Location = new System.Drawing.Point(272, 408);
+            this.qtrUpdateInput.Location = new System.Drawing.Point(201, 408);
             this.qtrUpdateInput.Multiline = true;
             this.qtrUpdateInput.Name = "qtrUpdateInput";
             this.qtrUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -237,7 +238,7 @@
             this.qtrUpdateLabel.AutoSize = true;
             this.qtrUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtrUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.qtrUpdateLabel.Location = new System.Drawing.Point(246, 369);
+            this.qtrUpdateLabel.Location = new System.Drawing.Point(175, 369);
             this.qtrUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.qtrUpdateLabel.Name = "qtrUpdateLabel";
             this.qtrUpdateLabel.Size = new System.Drawing.Size(190, 36);
@@ -250,7 +251,7 @@
             this.DownUpdateLabel.AutoSize = true;
             this.DownUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.DownUpdateLabel.Location = new System.Drawing.Point(444, 369);
+            this.DownUpdateLabel.Location = new System.Drawing.Point(489, 369);
             this.DownUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.DownUpdateLabel.Name = "DownUpdateLabel";
             this.DownUpdateLabel.Size = new System.Drawing.Size(176, 36);
@@ -263,7 +264,7 @@
             this.downUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.downUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
-            this.downUpdateInput.Location = new System.Drawing.Point(470, 408);
+            this.downUpdateInput.Location = new System.Drawing.Point(515, 408);
             this.downUpdateInput.Multiline = true;
             this.downUpdateInput.Name = "downUpdateInput";
             this.downUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -276,7 +277,7 @@
             this.toGoUpdateLabel.AutoSize = true;
             this.toGoUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toGoUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.toGoUpdateLabel.Location = new System.Drawing.Point(632, 369);
+            this.toGoUpdateLabel.Location = new System.Drawing.Point(672, 369);
             this.toGoUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.toGoUpdateLabel.Name = "toGoUpdateLabel";
             this.toGoUpdateLabel.Size = new System.Drawing.Size(181, 36);
@@ -289,13 +290,26 @@
             this.toGoUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.toGoUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toGoUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
-            this.toGoUpdateInput.Location = new System.Drawing.Point(658, 408);
+            this.toGoUpdateInput.Location = new System.Drawing.Point(698, 408);
             this.toGoUpdateInput.Multiline = true;
             this.toGoUpdateInput.Name = "toGoUpdateInput";
             this.toGoUpdateInput.Size = new System.Drawing.Size(125, 44);
             this.toGoUpdateInput.TabIndex = 31;
             this.toGoUpdateInput.Text = "# Yards";
             this.toGoUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // updateConfirm
+            // 
+            this.updateConfirm.BackColor = System.Drawing.Color.Aqua;
+            this.updateConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.updateConfirm.Font = new System.Drawing.Font("Impact", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateConfirm.Location = new System.Drawing.Point(368, 363);
+            this.updateConfirm.Name = "updateConfirm";
+            this.updateConfirm.Size = new System.Drawing.Size(118, 89);
+            this.updateConfirm.TabIndex = 33;
+            this.updateConfirm.Text = "DONE";
+            this.updateConfirm.UseVisualStyleBackColor = false;
+            this.updateConfirm.Click += new System.EventHandler(this.updateConfirm_Click);
             // 
             // Form2
             // 
@@ -305,6 +319,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(855, 464);
+            this.Controls.Add(this.updateConfirm);
             this.Controls.Add(this.toGoUpdateLabel);
             this.Controls.Add(this.toGoUpdateInput);
             this.Controls.Add(this.DownUpdateLabel);
@@ -326,9 +341,11 @@
             this.Controls.Add(this.homeTeamUpdateLabel);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(881, 535);
             this.Name = "Form2";
             this.Text = "Controller for ScoreBoard";
             this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -355,5 +372,6 @@
         protected System.Windows.Forms.TextBox downUpdateInput;
         protected System.Windows.Forms.Label toGoUpdateLabel;
         protected System.Windows.Forms.TextBox toGoUpdateInput;
+        private System.Windows.Forms.Button updateConfirm;
     }
 }

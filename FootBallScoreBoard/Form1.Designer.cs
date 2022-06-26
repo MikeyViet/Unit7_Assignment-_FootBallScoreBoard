@@ -1,6 +1,6 @@
 ﻿namespace FootBallScoreBoard
 {
-    partial class TrailBlazer_ScoreBoard
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrailBlazer_ScoreBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homeTeamLabel = new System.Windows.Forms.Label();
             this.visitorTeamLable = new System.Windows.Forms.Label();
             this.homeTeamScore = new System.Windows.Forms.Label();
@@ -65,7 +65,6 @@
             this.homeTeamLabel.TabIndex = 0;
             this.homeTeamLabel.Text = "HOME";
             this.homeTeamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.homeTeamLabel.Click += new System.EventHandler(this.homeTeamLabel_Click);
             // 
             // visitorTeamLable
             // 
@@ -80,7 +79,6 @@
             this.visitorTeamLable.TabIndex = 1;
             this.visitorTeamLable.Text = "VISITOR";
             this.visitorTeamLable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.visitorTeamLable.Click += new System.EventHandler(this.visitorTeamLable_Click);
             // 
             // homeTeamScore
             // 
@@ -98,7 +96,6 @@
             this.homeTeamScore.TabIndex = 2;
             this.homeTeamScore.Text = "00";
             this.homeTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.homeTeamScore.Click += new System.EventHandler(this.homeTeamScore_Click);
             // 
             // visitorTeamScore
             // 
@@ -115,7 +112,6 @@
             this.visitorTeamScore.TabIndex = 3;
             this.visitorTeamScore.Text = "00";
             this.visitorTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.visitorTeamScore.Click += new System.EventHandler(this.visitorTeamScore_Click);
             // 
             // qtrLabel
             // 
@@ -129,7 +125,6 @@
             this.qtrLabel.TabIndex = 4;
             this.qtrLabel.Text = "QTR";
             this.qtrLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.qtrLabel.Click += new System.EventHandler(this.qtrLabel_Click);
             // 
             // numQuarter
             // 
@@ -144,7 +139,6 @@
             this.numQuarter.TabIndex = 5;
             this.numQuarter.Text = "0";
             this.numQuarter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.numQuarter.Click += new System.EventHandler(this.numQuarter_Click);
             // 
             // numDown
             // 
@@ -160,7 +154,6 @@
             this.numDown.TabIndex = 6;
             this.numDown.Text = "0";
             this.numDown.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.numDown.Click += new System.EventHandler(this.numDown_Click);
             // 
             // numYardsToGo
             // 
@@ -175,7 +168,6 @@
             this.numYardsToGo.TabIndex = 7;
             this.numYardsToGo.Text = "00";
             this.numYardsToGo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.numYardsToGo.Click += new System.EventHandler(this.numYardsToGo_Click);
             // 
             // downLabel
             // 
@@ -189,7 +181,6 @@
             this.downLabel.TabIndex = 8;
             this.downLabel.Text = "DOWN";
             this.downLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.downLabel.Click += new System.EventHandler(this.downLabel_Click);
             // 
             // toGoLabel
             // 
@@ -201,7 +192,6 @@
             this.toGoLabel.Size = new System.Drawing.Size(153, 77);
             this.toGoLabel.TabIndex = 9;
             this.toGoLabel.Text = "TO GO";
-            this.toGoLabel.Click += new System.EventHandler(this.toGoLabel_Click);
             // 
             // clock
             // 
@@ -307,7 +297,6 @@
             this.tccdMascotImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tccdMascotImageBox.TabIndex = 17;
             this.tccdMascotImageBox.TabStop = false;
-            this.tccdMascotImageBox.Click += new System.EventHandler(this.tccdMascotImageBox_Click);
             // 
             // updateControllerButton
             // 

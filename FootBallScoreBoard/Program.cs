@@ -16,7 +16,7 @@ namespace FootBallScoreBoard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrailBlazer_ScoreBoard());
+            Application.Run(new Form1());
         }
     }
 }

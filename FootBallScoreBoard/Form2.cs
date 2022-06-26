@@ -26,5 +26,17 @@ namespace FootBallScoreBoard
         {
 
         }
+
+        private void updateConfirm_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+
+            frm.updateScoreBoard(homeTeamUpdateInput.Text);
+
+            frm.Show();
+            this.Hide();
+
+
+        }
     }
 }
