@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.controllerLabel = new System.Windows.Forms.Label();
@@ -81,26 +81,26 @@
             // 
             this.homeTeamUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.homeTeamUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeTeamUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.homeTeamUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.homeTeamUpdateInput.Location = new System.Drawing.Point(35, 163);
             this.homeTeamUpdateInput.Multiline = true;
             this.homeTeamUpdateInput.Name = "homeTeamUpdateInput";
             this.homeTeamUpdateInput.Size = new System.Drawing.Size(230, 44);
             this.homeTeamUpdateInput.TabIndex = 14;
-            this.homeTeamUpdateInput.Text = "Enter New Score";
+            this.homeTeamUpdateInput.Text = "00";
             this.homeTeamUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // homeTeamUpdateTolInput
             // 
             this.homeTeamUpdateTolInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.homeTeamUpdateTolInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeTeamUpdateTolInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.homeTeamUpdateTolInput.ForeColor = System.Drawing.Color.Red;
             this.homeTeamUpdateTolInput.Location = new System.Drawing.Point(35, 249);
             this.homeTeamUpdateTolInput.Multiline = true;
             this.homeTeamUpdateTolInput.Name = "homeTeamUpdateTolInput";
             this.homeTeamUpdateTolInput.Size = new System.Drawing.Size(230, 44);
             this.homeTeamUpdateTolInput.TabIndex = 16;
-            this.homeTeamUpdateTolInput.Text = "Enter TimeOuts";
+            this.homeTeamUpdateTolInput.Text = "3";
             this.homeTeamUpdateTolInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // homeTeamUpdateScoreLabel
@@ -146,13 +146,13 @@
             // 
             this.ballPositionUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ballPositionUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ballPositionUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.ballPositionUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.ballPositionUpdateInput.Location = new System.Drawing.Point(35, 408);
             this.ballPositionUpdateInput.Multiline = true;
             this.ballPositionUpdateInput.Name = "ballPositionUpdateInput";
             this.ballPositionUpdateInput.Size = new System.Drawing.Size(125, 44);
             this.ballPositionUpdateInput.TabIndex = 18;
-            this.ballPositionUpdateInput.Text = "## Yard";
+            this.ballPositionUpdateInput.Text = "00";
             this.ballPositionUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // visitorTeamUpdateTolLabel
@@ -172,13 +172,13 @@
             // 
             this.visitorTeamUpdateTolInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.visitorTeamUpdateTolInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visitorTeamUpdateTolInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.visitorTeamUpdateTolInput.ForeColor = System.Drawing.Color.Red;
             this.visitorTeamUpdateTolInput.Location = new System.Drawing.Point(593, 249);
             this.visitorTeamUpdateTolInput.Multiline = true;
             this.visitorTeamUpdateTolInput.Name = "visitorTeamUpdateTolInput";
             this.visitorTeamUpdateTolInput.Size = new System.Drawing.Size(230, 44);
             this.visitorTeamUpdateTolInput.TabIndex = 23;
-            this.visitorTeamUpdateTolInput.Text = "Enter TimeOuts";
+            this.visitorTeamUpdateTolInput.Text = "3";
             this.visitorTeamUpdateTolInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // visitorTeamUpdateScoreLabel
@@ -198,13 +198,13 @@
             // 
             this.visitorTeamUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.visitorTeamUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visitorTeamUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.visitorTeamUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.visitorTeamUpdateInput.Location = new System.Drawing.Point(593, 163);
             this.visitorTeamUpdateInput.Multiline = true;
             this.visitorTeamUpdateInput.Name = "visitorTeamUpdateInput";
             this.visitorTeamUpdateInput.Size = new System.Drawing.Size(230, 44);
             this.visitorTeamUpdateInput.TabIndex = 21;
-            this.visitorTeamUpdateInput.Text = "Enter New Score";
+            this.visitorTeamUpdateInput.Text = "00";
             this.visitorTeamUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // visitorTeamUpdateLabel
@@ -223,13 +223,13 @@
             // 
             this.qtrUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.qtrUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtrUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.qtrUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.qtrUpdateInput.Location = new System.Drawing.Point(201, 408);
             this.qtrUpdateInput.Multiline = true;
             this.qtrUpdateInput.Name = "qtrUpdateInput";
             this.qtrUpdateInput.Size = new System.Drawing.Size(125, 44);
             this.qtrUpdateInput.TabIndex = 27;
-            this.qtrUpdateInput.Text = "# Quarter";
+            this.qtrUpdateInput.Text = "1";
             this.qtrUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // qtrUpdateLabel
@@ -262,13 +262,13 @@
             // 
             this.downUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.downUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.downUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.downUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.downUpdateInput.Location = new System.Drawing.Point(515, 408);
             this.downUpdateInput.Multiline = true;
             this.downUpdateInput.Name = "downUpdateInput";
             this.downUpdateInput.Size = new System.Drawing.Size(125, 44);
             this.downUpdateInput.TabIndex = 29;
-            this.downUpdateInput.Text = "# Down";
+            this.downUpdateInput.Text = "00";
             this.downUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // toGoUpdateLabel
@@ -288,13 +288,13 @@
             // 
             this.toGoUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.toGoUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toGoUpdateInput.ForeColor = System.Drawing.Color.SkyBlue;
+            this.toGoUpdateInput.ForeColor = System.Drawing.Color.Red;
             this.toGoUpdateInput.Location = new System.Drawing.Point(698, 408);
             this.toGoUpdateInput.Multiline = true;
             this.toGoUpdateInput.Name = "toGoUpdateInput";
             this.toGoUpdateInput.Size = new System.Drawing.Size(125, 44);
             this.toGoUpdateInput.TabIndex = 31;
-            this.toGoUpdateInput.Text = "# Yards";
+            this.toGoUpdateInput.Text = "00";
             this.toGoUpdateInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // updateConfirm
@@ -354,23 +354,23 @@
         #endregion
         protected internal System.Windows.Forms.Label controllerLabel;
         private System.Windows.Forms.Label homeTeamUpdateLabel;
-        private System.Windows.Forms.TextBox homeTeamUpdateInput;
-        protected System.Windows.Forms.TextBox homeTeamUpdateTolInput;
+        public System.Windows.Forms.TextBox homeTeamUpdateInput;
+        public System.Windows.Forms.TextBox homeTeamUpdateTolInput;
         protected System.Windows.Forms.Label homeTeamUpdateScoreLabel;
         protected System.Windows.Forms.Label homeTeamUpdateTolLabel;
         protected System.Windows.Forms.Label ballPositionUpdateLabel;
-        protected System.Windows.Forms.TextBox ballPositionUpdateInput;
+        public System.Windows.Forms.TextBox ballPositionUpdateInput;
         protected System.Windows.Forms.Label visitorTeamUpdateTolLabel;
-        protected System.Windows.Forms.TextBox visitorTeamUpdateTolInput;
+        public System.Windows.Forms.TextBox visitorTeamUpdateTolInput;
         protected System.Windows.Forms.Label visitorTeamUpdateScoreLabel;
-        private System.Windows.Forms.TextBox visitorTeamUpdateInput;
+        public System.Windows.Forms.TextBox visitorTeamUpdateInput;
         private System.Windows.Forms.Label visitorTeamUpdateLabel;
-        protected System.Windows.Forms.TextBox qtrUpdateInput;
+        public System.Windows.Forms.TextBox qtrUpdateInput;
         protected System.Windows.Forms.Label qtrUpdateLabel;
         protected System.Windows.Forms.Label DownUpdateLabel;
-        protected System.Windows.Forms.TextBox downUpdateInput;
+        public System.Windows.Forms.TextBox downUpdateInput;
         protected System.Windows.Forms.Label toGoUpdateLabel;
-        protected System.Windows.Forms.TextBox toGoUpdateInput;
+        public System.Windows.Forms.TextBox toGoUpdateInput;
         private System.Windows.Forms.Button updateConfirm;
     }
 }

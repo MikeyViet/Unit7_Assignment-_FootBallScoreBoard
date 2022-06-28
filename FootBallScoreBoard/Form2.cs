@@ -8,6 +8,7 @@ namespace FootBallScoreBoard
         public Form2()
         {
             InitializeComponent();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -19,8 +20,30 @@ namespace FootBallScoreBoard
         {
 
             Form1 frm = new Form1();
-            frm.updateConfirm_Click(homeTeamUpdateInput.Text, visitorTeamUpdateInput.Text, homeTeamUpdateTolInput.Text, visitorTeamUpdateTolInput.Text, ballPositionUpdateInput.Text, qtrUpdateInput.Text, ballPositionUpdateInput.Text, toGoUpdateInput.Text);
 
+            ScoreBoardData.ScoreHomeTeam = this.homeTeamUpdateInput.Text;
+            frm.homeTeamScore.Text = ScoreBoardData.ScoreHomeTeam;
+
+            ScoreBoardData.ScoreVisitorTeam = this.visitorTeamUpdateInput.Text;
+            frm.visitorTeamScore.Text = ScoreBoardData.ScoreVisitorTeam;
+
+            ScoreBoardData.TimeOutLeftHomeTeam = this.homeTeamUpdateTolInput.Text;
+            frm.homeTimeOutNum.Text = ScoreBoardData.TimeOutLeftHomeTeam;
+
+            ScoreBoardData.TimeOutLeftVisitorTeam = this.visitorTeamUpdateTolInput.Text;
+            frm.visitorTimeOutNum.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
+
+            ScoreBoardData.PositionOfBallOnField = this.ballPositionUpdateInput.Text;
+            frm.numBallPosition.Text = ScoreBoardData.PositionOfBallOnField;
+
+            ScoreBoardData.CurrentQuarterOfGame = this.qtrUpdateInput.Text;
+            frm.numQuarter.Text = ScoreBoardData.CurrentQuarterOfGame;
+
+            ScoreBoardData.CurrentNumberOfDown = this.downUpdateInput.Text;
+            frm.numDown.Text = ScoreBoardData.CurrentNumberOfDown;
+
+            ScoreBoardData.NumberOfYardsForFirstDown = this.toGoUpdateInput.Text;
+            frm.numYardsToGo.Text = ScoreBoardData.NumberOfYardsForFirstDown;
 
             frm.Show();
             this.Hide();

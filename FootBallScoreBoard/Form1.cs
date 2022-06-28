@@ -5,28 +5,18 @@ namespace FootBallScoreBoard
 {
     public partial class Form1 : Form
     {
-        private string HomeTeamScore { get; set; }
-        private string VisitorTeamScore { get; set; }
 
         public Form1()
         {
+
             InitializeComponent();
-        }
 
-        public void updateConfirm_Click(string score, string score2, string homeTol, string visitorTol, string ballPosition, string numQtr, string numDowns, string yardsToGo)
 
-        {
-            this.homeTeamScore.Text = score;
-            this.visitorTeamScore.Text = score2;
-            this.homeTimeOutNum.Text = homeTol;
-            this.visitorTimeOutNum.Text = visitorTol;
-            this.numBallPosition.Text = ballPosition;
-            this.numQuarter.Text = numQtr;
-            this.numDown.Text = numDowns;
-            this.numYardsToGo.Text = yardsToGo;
 
 
         }
+
+
 
 
 
@@ -41,11 +31,25 @@ namespace FootBallScoreBoard
             Form2 controllerForScoreBoard = new Form2();
 
             controllerForScoreBoard.Show();
+            controllerForScoreBoard.homeTeamUpdateInput.Text = ScoreBoardData.ScoreHomeTeam;
+            controllerForScoreBoard.visitorTeamUpdateInput.Text = ScoreBoardData.ScoreVisitorTeam;
+            controllerForScoreBoard.homeTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftHomeTeam;
+            controllerForScoreBoard.visitorTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
+            controllerForScoreBoard.ballPositionUpdateInput.Text = ScoreBoardData.PositionOfBallOnField;
+            controllerForScoreBoard.qtrUpdateInput.Text = ScoreBoardData.CurrentQuarterOfGame;
+            controllerForScoreBoard.downUpdateInput.Text = ScoreBoardData.CurrentNumberOfDown;
+            controllerForScoreBoard.toGoUpdateInput.Text = ScoreBoardData.NumberOfYardsForFirstDown;
+            controllerForScoreBoard.Show();
             this.Hide();
 
 
 
 
+
+        }
+
+        private void visitorTeamScore_Click(object sender, EventArgs e)
+        {
 
         }
     }

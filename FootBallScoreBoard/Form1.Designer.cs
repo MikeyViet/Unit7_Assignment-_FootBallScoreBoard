@@ -27,13 +27,13 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.homeTeamLabel = new System.Windows.Forms.Label();
             this.visitorTeamLable = new System.Windows.Forms.Label();
             this.homeTeamScore = new System.Windows.Forms.Label();
-            this.visitorTeamScore = new System.Windows.Forms.Label();
             this.qtrLabel = new System.Windows.Forms.Label();
             this.numQuarter = new System.Windows.Forms.Label();
             this.numDown = new System.Windows.Forms.Label();
@@ -49,7 +49,12 @@
             this.homeTimeOutLabel = new System.Windows.Forms.Label();
             this.tccdMascotImageBox = new System.Windows.Forms.PictureBox();
             this.updateControllerButton = new System.Windows.Forms.Button();
+            this.visitorTeamScore = new System.Windows.Forms.Label();
+            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.form2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // homeTeamLabel
@@ -96,22 +101,6 @@
             this.homeTeamScore.TabIndex = 2;
             this.homeTeamScore.Text = "00";
             this.homeTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // visitorTeamScore
-            // 
-            this.visitorTeamScore.AutoSize = true;
-            this.visitorTeamScore.BackColor = System.Drawing.SystemColors.MenuText;
-            this.visitorTeamScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.visitorTeamScore.Font = new System.Drawing.Font("Bahnschrift", 72F, System.Drawing.FontStyle.Bold);
-            this.visitorTeamScore.ForeColor = System.Drawing.Color.Yellow;
-            this.visitorTeamScore.Location = new System.Drawing.Point(1211, 110);
-            this.visitorTeamScore.Margin = new System.Windows.Forms.Padding(0);
-            this.visitorTeamScore.MaximumSize = new System.Drawing.Size(350, 300);
-            this.visitorTeamScore.Name = "visitorTeamScore";
-            this.visitorTeamScore.Size = new System.Drawing.Size(307, 233);
-            this.visitorTeamScore.TabIndex = 3;
-            this.visitorTeamScore.Text = "00";
-            this.visitorTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // qtrLabel
             // 
@@ -319,6 +308,31 @@
             this.updateControllerButton.UseVisualStyleBackColor = false;
             this.updateControllerButton.Click += new System.EventHandler(this.updateControllerButton_Click);
             // 
+            // visitorTeamScore
+            // 
+            this.visitorTeamScore.AutoSize = true;
+            this.visitorTeamScore.BackColor = System.Drawing.SystemColors.MenuText;
+            this.visitorTeamScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.visitorTeamScore.Font = new System.Drawing.Font("Bahnschrift", 72F, System.Drawing.FontStyle.Bold);
+            this.visitorTeamScore.ForeColor = System.Drawing.Color.Yellow;
+            this.visitorTeamScore.Location = new System.Drawing.Point(1211, 110);
+            this.visitorTeamScore.Margin = new System.Windows.Forms.Padding(0);
+            this.visitorTeamScore.MaximumSize = new System.Drawing.Size(350, 300);
+            this.visitorTeamScore.Name = "visitorTeamScore";
+            this.visitorTeamScore.Size = new System.Drawing.Size(307, 233);
+            this.visitorTeamScore.TabIndex = 3;
+            this.visitorTeamScore.Text = "00";
+            this.visitorTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.visitorTeamScore.Click += new System.EventHandler(this.visitorTeamScore_Click);
+            // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(FootBallScoreBoard.Form1);
+            // 
+            // form2BindingSource
+            // 
+            this.form2BindingSource.DataSource = typeof(FootBallScoreBoard.Form2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -329,12 +343,9 @@
             this.ClientSize = new System.Drawing.Size(1574, 729);
             this.Controls.Add(this.updateControllerButton);
             this.Controls.Add(this.tccdMascotImageBox);
-            this.Controls.Add(this.numQuarter);
-            this.Controls.Add(this.homeTimeOutNum);
             this.Controls.Add(this.homeTimeOutLabel);
             this.Controls.Add(this.numDown);
             this.Controls.Add(this.numYardsToGo);
-            this.Controls.Add(this.visitorTimeOutNum);
             this.Controls.Add(this.visitorTimeOutLabel);
             this.Controls.Add(this.numBallPosition);
             this.Controls.Add(this.ballPositionLabel);
@@ -346,6 +357,9 @@
             this.Controls.Add(this.toGoLabel);
             this.Controls.Add(this.downLabel);
             this.Controls.Add(this.qtrLabel);
+            this.Controls.Add(this.visitorTimeOutNum);
+            this.Controls.Add(this.homeTimeOutNum);
+            this.Controls.Add(this.numQuarter);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -356,6 +370,8 @@
             this.Text = "TrailBlazers ScoreBoard";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.form2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,24 +381,25 @@
 
         private System.Windows.Forms.Label homeTeamLabel;
         private System.Windows.Forms.Label visitorTeamLable;
-        private System.Windows.Forms.Label homeTeamScore;
-        private System.Windows.Forms.Label visitorTeamScore;
+        public System.Windows.Forms.Label homeTeamScore;
+        public System.Windows.Forms.Label visitorTeamScore;
         private System.Windows.Forms.Label qtrLabel;
-        private System.Windows.Forms.Label numQuarter;
-        private System.Windows.Forms.Label numDown;
-        private System.Windows.Forms.Label numYardsToGo;
+        public System.Windows.Forms.Label numQuarter;
+        public System.Windows.Forms.Label numDown;
+        public System.Windows.Forms.Label numYardsToGo;
         private System.Windows.Forms.Label downLabel;
         private System.Windows.Forms.Label toGoLabel;
         private System.Windows.Forms.GroupBox clock;
-        private System.Windows.Forms.Label numBallPosition;
+        public System.Windows.Forms.Label numBallPosition;
         private System.Windows.Forms.Label ballPositionLabel;
         private System.Windows.Forms.Label visitorTimeOutLabel;
-        private System.Windows.Forms.Label visitorTimeOutNum;
-        private System.Windows.Forms.Label homeTimeOutNum;
+        public System.Windows.Forms.Label visitorTimeOutNum;
+        public System.Windows.Forms.Label homeTimeOutNum;
         private System.Windows.Forms.Label homeTimeOutLabel;
         private System.Windows.Forms.PictureBox tccdMascotImageBox;
         private System.Windows.Forms.Button updateControllerButton;
-
+        private System.Windows.Forms.BindingSource form1BindingSource;
+        private System.Windows.Forms.BindingSource form2BindingSource;
     }
 }
 
