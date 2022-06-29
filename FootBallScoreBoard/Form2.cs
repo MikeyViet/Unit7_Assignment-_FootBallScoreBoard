@@ -5,56 +5,72 @@ namespace FootBallScoreBoard
 {
     public partial class Form2 : Form
     {
+        public Form1 ScoreBoard;
+
         public Form2()
         {
             InitializeComponent();
+
+
 
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 60; i++)
-            {
-                this.comboBox1.Items.Add(i.ToString());
-                this.comboBox2.Items.Add(i.ToString());
+            /*            for (int i = 0; i < 60; i++)
+                        {
+                            this.comboBox2.Items.Add(i.ToString());
+                            this.comboBox2.SelectedIndex = int.Parse(ScoreBoardData.Seconds);
 
-            }
 
-            this.comboBox1.SelectedIndex = 59;
-            this.comboBox2.SelectedIndex = 59;
+                        }
+
+                        for (int i = 0; i < 15; i++)
+                        {
+                            this.comboBox1.Items.Add(i.ToString());
+                            this.comboBox1.SelectedIndex = int.Parse(ScoreBoardData.Minutes);
+                        }*/
+
 
         }
 
         private void updateConfirm_Click(object sender, EventArgs e)
         {
 
-            Form1 frm = new Form1();
+            ScoreBoard = new Form1();
 
             ScoreBoardData.ScoreHomeTeam = this.homeTeamUpdateInput.Text;
-            frm.homeTeamScore.Text = ScoreBoardData.ScoreHomeTeam;
+            ScoreBoard.homeTeamScore.Text = ScoreBoardData.ScoreHomeTeam;
 
             ScoreBoardData.ScoreVisitorTeam = this.visitorTeamUpdateInput.Text;
-            frm.visitorTeamScore.Text = ScoreBoardData.ScoreVisitorTeam;
+            ScoreBoard.visitorTeamScore.Text = ScoreBoardData.ScoreVisitorTeam;
 
             ScoreBoardData.TimeOutLeftHomeTeam = this.homeTeamUpdateTolInput.Text;
-            frm.homeTimeOutNum.Text = ScoreBoardData.TimeOutLeftHomeTeam;
+            ScoreBoard.homeTimeOutNum.Text = ScoreBoardData.TimeOutLeftHomeTeam;
 
             ScoreBoardData.TimeOutLeftVisitorTeam = this.visitorTeamUpdateTolInput.Text;
-            frm.visitorTimeOutNum.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
+            ScoreBoard.visitorTimeOutNum.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
 
             ScoreBoardData.PositionOfBallOnField = this.ballPositionUpdateInput.Text;
-            frm.numBallPosition.Text = ScoreBoardData.PositionOfBallOnField;
+            ScoreBoard.numBallPosition.Text = ScoreBoardData.PositionOfBallOnField;
 
             ScoreBoardData.CurrentQuarterOfGame = this.qtrUpdateInput.Text;
-            frm.numQuarter.Text = ScoreBoardData.CurrentQuarterOfGame;
+            ScoreBoard.numQuarter.Text = ScoreBoardData.CurrentQuarterOfGame;
 
             ScoreBoardData.CurrentNumberOfDown = this.downUpdateInput.Text;
-            frm.numDown.Text = ScoreBoardData.CurrentNumberOfDown;
+            ScoreBoard.numDown.Text = ScoreBoardData.CurrentNumberOfDown;
 
             ScoreBoardData.NumberOfYardsForFirstDown = this.toGoUpdateInput.Text;
-            frm.numYardsToGo.Text = ScoreBoardData.NumberOfYardsForFirstDown;
+            ScoreBoard.numYardsToGo.Text = ScoreBoardData.NumberOfYardsForFirstDown;
 
-            frm.Show();
+            ScoreBoardData.Minutes = comboBox1.Text;
+            ScoreBoardData.Seconds = comboBox2.Text;
+
+            ScoreBoard.timerLabel.Text = ScoreBoardData.Minutes + ":" + ScoreBoardData.Seconds;
+
+
+
+            ScoreBoard.Show();
             this.Hide();
 
 

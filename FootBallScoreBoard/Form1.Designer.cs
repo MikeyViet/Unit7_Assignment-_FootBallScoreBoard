@@ -323,13 +323,13 @@
             this.timerLabel.AutoSize = true;
             this.timerLabel.Font = new System.Drawing.Font("Bahnschrift", 59F, System.Drawing.FontStyle.Bold);
             this.timerLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.timerLabel.Location = new System.Drawing.Point(486, -26);
+            this.timerLabel.Location = new System.Drawing.Point(562, -34);
             this.timerLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.timerLabel.MinimumSize = new System.Drawing.Size(560, 188);
+            this.timerLabel.MinimumSize = new System.Drawing.Size(420, 188);
             this.timerLabel.Name = "timerLabel";
-            this.timerLabel.Size = new System.Drawing.Size(618, 190);
+            this.timerLabel.Size = new System.Drawing.Size(448, 190);
             this.timerLabel.TabIndex = 20;
-            this.timerLabel.Text = "15:00:00";
+            this.timerLabel.Text = "00:00";
             // 
             // button1
             // 
@@ -355,6 +355,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // form1BindingSource
@@ -434,7 +435,7 @@
         private System.Windows.Forms.Button updateControllerButton;
         private System.Windows.Forms.BindingSource form1BindingSource;
         private System.Windows.Forms.BindingSource form2BindingSource;
-        private System.Windows.Forms.Label timerLabel;
+        public System.Windows.Forms.Label timerLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;

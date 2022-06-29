@@ -7,47 +7,63 @@ namespace FootBallScoreBoard
     {
         public int totalSeconds;
 
+        public Form2 ScoreBoardUpdateController;
+
         public Form1()
         {
-
             InitializeComponent();
 
-
-
+            this.homeTeamScore.Text = ScoreBoardData.ScoreHomeTeam;
+            this.visitorTeamScore.Text = ScoreBoardData.ScoreVisitorTeam;
+            this.homeTimeOutNum.Text = ScoreBoardData.TimeOutLeftHomeTeam;
+            this.visitorTimeOutNum.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
+            this.numBallPosition.Text = ScoreBoardData.PositionOfBallOnField;
+            this.numQuarter.Text = ScoreBoardData.CurrentQuarterOfGame;
+            this.numDown.Text = ScoreBoardData.CurrentNumberOfDown;
+            this.numYardsToGo.Text = ScoreBoardData.NumberOfYardsForFirstDown;
+            this.timerLabel.Text = ScoreBoardData.Minutes + ":" + ScoreBoardData.Seconds;
 
         }
-
-
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.button2.Enabled = false;
-
         }
-
 
 
         private void updateControllerButton_Click(object sender, EventArgs e)
         {
-            Form2 controllerForScoreBoard = new Form2();
 
-            controllerForScoreBoard.homeTeamUpdateInput.Text = ScoreBoardData.ScoreHomeTeam;
-            controllerForScoreBoard.visitorTeamUpdateInput.Text = ScoreBoardData.ScoreVisitorTeam;
-            controllerForScoreBoard.homeTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftHomeTeam;
-            controllerForScoreBoard.visitorTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
-            controllerForScoreBoard.ballPositionUpdateInput.Text = ScoreBoardData.PositionOfBallOnField;
-            controllerForScoreBoard.qtrUpdateInput.Text = ScoreBoardData.CurrentQuarterOfGame;
-            controllerForScoreBoard.downUpdateInput.Text = ScoreBoardData.CurrentNumberOfDown;
-            controllerForScoreBoard.toGoUpdateInput.Text = ScoreBoardData.NumberOfYardsForFirstDown;
-            controllerForScoreBoard.Show();
+            ScoreBoardUpdateController = new Form2();
+
+            ScoreBoardUpdateController.homeTeamUpdateInput.Text = ScoreBoardData.ScoreHomeTeam;
+            ScoreBoardUpdateController.visitorTeamUpdateInput.Text = ScoreBoardData.ScoreVisitorTeam;
+            ScoreBoardUpdateController.homeTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftHomeTeam;
+            ScoreBoardUpdateController.visitorTeamUpdateTolInput.Text = ScoreBoardData.TimeOutLeftVisitorTeam;
+            ScoreBoardUpdateController.ballPositionUpdateInput.Text = ScoreBoardData.PositionOfBallOnField;
+            ScoreBoardUpdateController.qtrUpdateInput.Text = ScoreBoardData.CurrentQuarterOfGame;
+            ScoreBoardUpdateController.downUpdateInput.Text = ScoreBoardData.CurrentNumberOfDown;
+            ScoreBoardUpdateController.toGoUpdateInput.Text = ScoreBoardData.NumberOfYardsForFirstDown;
+
+            string[] timerNumbers = this.timerLabel.Text.Split(':');
+
+            ScoreBoardData.Minutes = timerNumbers[0];
+            ScoreBoardData.Seconds = timerNumbers[1];
+
+            for (int i = 0; i < 60; i++)
+            {
+                ScoreBoardUpdateController.comboBox2.Items.Add(i.ToString());
+            }
+            ScoreBoardUpdateController.comboBox2.SelectedIndex = int.Parse(timerNumbers[1]);
+
+            for (int i = 0; i <= 15; i++)
+            {
+                ScoreBoardUpdateController.comboBox1.Items.Add(i.ToString());
+            }
+            ScoreBoardUpdateController.comboBox1.SelectedIndex = int.Parse(timerNumbers[0]);
+
+            ScoreBoardUpdateController.Show();
             this.Hide();
-
-
-
-
-
         }
 
         private void visitorTeamScore_Click(object sender, EventArgs e)
@@ -62,44 +78,35 @@ namespace FootBallScoreBoard
                 totalSeconds--;
                 int minutes = totalSeconds / 60;
                 int seconds = totalSeconds - (minutes * 60);
-                int mSeconds = (totalSeconds - (minutes * 60)) / 1000;
 
-                Console.WriteLine(totalSeconds);
-
-                this.timerLabel.Text = minutes.ToString() + ":" + seconds.ToString() + ":" + mSeconds.ToString();
-            }
-            else
-            {
-                this.timer1.Stop();
-                MessageBox.Show("Time's Up");
+                this.timerLabel.Text = minutes.ToString() + ":" + seconds.ToString();
             }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 frm2 = new Form2();
 
-            frm2.Show();
 
             this.button1.Enabled = false;
             this.button2.Enabled = true;
 
 
-
-
-            int minutes = int.Parse(frm2.comboBox1.SelectedItem.ToString());
-            int seconds = int.Parse(frm2.comboBox2.SelectedItem.ToString());
+            int minutes = int.Parse(ScoreBoardData.Minutes);
+            int seconds = int.Parse(ScoreBoardData.Seconds);
 
             totalSeconds = (minutes * 60) + seconds;
 
             this.timer1.Enabled = true;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.button2.Enabled = false;
             this.button1.Enabled = true;
+
+            this.timer1.Enabled = false;
 
         }
     }

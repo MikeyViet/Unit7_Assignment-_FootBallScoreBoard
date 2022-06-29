@@ -6,42 +6,19 @@ using System.Threading.Tasks;
 
 namespace FootBallScoreBoard
 {
-    internal class ScoreBoardData
+    internal static class ScoreBoardData
     {
         // All the numbers needed to populate the Football ScoreBoard
-        public static string ScoreHomeTeam { get; set; }
-        public static string ScoreVisitorTeam { get; set; }
-        public static string TimeOutLeftHomeTeam { get; set; }
-        public static string TimeOutLeftVisitorTeam { get; set; }
-        public static string PositionOfBallOnField { get; set; }
-        public static string CurrentQuarterOfGame { get; set; }
-        public static string CurrentNumberOfDown { get; set; }
-        public static string NumberOfYardsForFirstDown { get; set; }
-
-        public ScoreBoardData()
-        {
-            ScoreHomeTeam = "00";
-            ScoreVisitorTeam = "99";
-            TimeOutLeftHomeTeam = "3";
-            TimeOutLeftVisitorTeam = "3";
-            PositionOfBallOnField = "00";
-            CurrentQuarterOfGame = "1";
-            CurrentNumberOfDown = "1";
-            NumberOfYardsForFirstDown = "10";
-
-        }
-
-        //public void takeTimeOut()
-        //{
-        //    if (TimeOutLeftHomeTeam)
-        //    {
-
-        //    }
-
-        //}
-
-
-
+        public static string ScoreHomeTeam { get; set; } = "00";
+        public static string ScoreVisitorTeam { get; set; } = "00";
+        public static string TimeOutLeftHomeTeam { get; set; } = "3";
+        public static string TimeOutLeftVisitorTeam { get; set; } = "3";
+        public static string PositionOfBallOnField { get; set; } = "00";
+        public static string CurrentQuarterOfGame { get; set; } = "1";
+        public static string CurrentNumberOfDown { get; set; } = "1";
+        public static string NumberOfYardsForFirstDown { get; set; } = "10";
+        public static string Minutes { get; set; } = "12";
+        public static string Seconds { get; set; } = "12";
 
     }
 }
