@@ -323,7 +323,7 @@
             this.timerLabel.AutoSize = true;
             this.timerLabel.Font = new System.Drawing.Font("Bahnschrift", 59F, System.Drawing.FontStyle.Bold);
             this.timerLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.timerLabel.Location = new System.Drawing.Point(562, -34);
+            this.timerLabel.Location = new System.Drawing.Point(592, -32);
             this.timerLabel.Margin = new System.Windows.Forms.Padding(0);
             this.timerLabel.MinimumSize = new System.Drawing.Size(420, 188);
             this.timerLabel.Name = "timerLabel";
@@ -333,10 +333,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(624, 146);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 43);
+            this.button1.Size = new System.Drawing.Size(137, 47);
             this.button1.TabIndex = 23;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -344,10 +344,10 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(787, 146);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 43);
+            this.button2.Size = new System.Drawing.Size(137, 47);
             this.button2.TabIndex = 24;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;

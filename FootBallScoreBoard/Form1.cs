@@ -29,7 +29,13 @@ namespace FootBallScoreBoard
         {
             this.button2.Enabled = false;
         }
-
+        public string appendZero(double str)
+        {
+            if (str <= 9)
+                return "0" + str;
+            else
+                return str.ToString();
+        }
 
         private void updateControllerButton_Click(object sender, EventArgs e)
         {
@@ -73,13 +79,18 @@ namespace FootBallScoreBoard
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            string newMinute = "";
+            string newSecond = "";
             if (totalSeconds > 0)
             {
                 totalSeconds--;
                 int minutes = totalSeconds / 60;
                 int seconds = totalSeconds - (minutes * 60);
 
-                this.timerLabel.Text = minutes.ToString() + ":" + seconds.ToString();
+
+                newMinute = this.appendZero(minutes);
+                newSecond = this.appendZero(seconds);
+                this.timerLabel.Text = newMinute + ":" + newSecond;
             }
 
         }

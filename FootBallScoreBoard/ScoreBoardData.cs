@@ -17,8 +17,8 @@ namespace FootBallScoreBoard
         public static string CurrentQuarterOfGame { get; set; } = "1";
         public static string CurrentNumberOfDown { get; set; } = "1";
         public static string NumberOfYardsForFirstDown { get; set; } = "10";
-        public static string Minutes { get; set; } = "12";
-        public static string Seconds { get; set; } = "12";
+        public static string Minutes { get; set; } = "15";
+        public static string Seconds { get; set; } = "00";
 
     }
 }
