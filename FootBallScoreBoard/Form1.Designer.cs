@@ -40,7 +40,6 @@
             this.numYardsToGo = new System.Windows.Forms.Label();
             this.downLabel = new System.Windows.Forms.Label();
             this.toGoLabel = new System.Windows.Forms.Label();
-            this.clock = new System.Windows.Forms.GroupBox();
             this.numBallPosition = new System.Windows.Forms.Label();
             this.ballPositionLabel = new System.Windows.Forms.Label();
             this.visitorTimeOutLabel = new System.Windows.Forms.Label();
@@ -50,6 +49,10 @@
             this.tccdMascotImageBox = new System.Windows.Forms.PictureBox();
             this.updateControllerButton = new System.Windows.Forms.Button();
             this.visitorTeamScore = new System.Windows.Forms.Label();
+            this.timerLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.form2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).BeginInit();
@@ -181,16 +184,6 @@
             this.toGoLabel.Size = new System.Drawing.Size(153, 77);
             this.toGoLabel.TabIndex = 9;
             this.toGoLabel.Text = "TO GO";
-            // 
-            // clock
-            // 
-            this.clock.Location = new System.Drawing.Point(500, 12);
-            this.clock.Margin = new System.Windows.Forms.Padding(0);
-            this.clock.Name = "clock";
-            this.clock.Size = new System.Drawing.Size(560, 188);
-            this.clock.TabIndex = 10;
-            this.clock.TabStop = false;
-            this.clock.Text = "groupBox1";
             // 
             // numBallPosition
             // 
@@ -325,6 +318,45 @@
             this.visitorTeamScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.visitorTeamScore.Click += new System.EventHandler(this.visitorTeamScore_Click);
             // 
+            // timerLabel
+            // 
+            this.timerLabel.AutoSize = true;
+            this.timerLabel.Font = new System.Drawing.Font("Bahnschrift", 59F, System.Drawing.FontStyle.Bold);
+            this.timerLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.timerLabel.Location = new System.Drawing.Point(486, -26);
+            this.timerLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.timerLabel.MinimumSize = new System.Drawing.Size(560, 188);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.Size = new System.Drawing.Size(618, 190);
+            this.timerLabel.TabIndex = 20;
+            this.timerLabel.Text = "15:00:00";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(624, 146);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 43);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(787, 146);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(137, 43);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Stop";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // form1BindingSource
             // 
             this.form1BindingSource.DataSource = typeof(FootBallScoreBoard.Form1);
@@ -341,18 +373,20 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1574, 729);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.visitorTeamScore);
+            this.Controls.Add(this.visitorTimeOutLabel);
+            this.Controls.Add(this.visitorTeamLable);
+            this.Controls.Add(this.homeTimeOutLabel);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.updateControllerButton);
             this.Controls.Add(this.tccdMascotImageBox);
-            this.Controls.Add(this.homeTimeOutLabel);
             this.Controls.Add(this.numDown);
             this.Controls.Add(this.numYardsToGo);
-            this.Controls.Add(this.visitorTimeOutLabel);
             this.Controls.Add(this.numBallPosition);
             this.Controls.Add(this.ballPositionLabel);
-            this.Controls.Add(this.clock);
-            this.Controls.Add(this.visitorTeamScore);
             this.Controls.Add(this.homeTeamScore);
-            this.Controls.Add(this.visitorTeamLable);
             this.Controls.Add(this.homeTeamLabel);
             this.Controls.Add(this.toGoLabel);
             this.Controls.Add(this.downLabel);
@@ -362,6 +396,7 @@
             this.Controls.Add(this.numQuarter);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -389,7 +424,6 @@
         public System.Windows.Forms.Label numYardsToGo;
         private System.Windows.Forms.Label downLabel;
         private System.Windows.Forms.Label toGoLabel;
-        private System.Windows.Forms.GroupBox clock;
         public System.Windows.Forms.Label numBallPosition;
         private System.Windows.Forms.Label ballPositionLabel;
         private System.Windows.Forms.Label visitorTimeOutLabel;
@@ -400,6 +434,10 @@
         private System.Windows.Forms.Button updateControllerButton;
         private System.Windows.Forms.BindingSource form1BindingSource;
         private System.Windows.Forms.BindingSource form2BindingSource;
+        private System.Windows.Forms.Label timerLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

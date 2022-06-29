@@ -49,6 +49,10 @@
             this.toGoUpdateLabel = new System.Windows.Forms.Label();
             this.toGoUpdateInput = new System.Windows.Forms.TextBox();
             this.updateConfirm = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.minuteInputLable1 = new System.Windows.Forms.Label();
+            this.secondInputLabel1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // controllerLabel
@@ -57,7 +61,7 @@
             this.controllerLabel.AutoSize = true;
             this.controllerLabel.Font = new System.Drawing.Font("MV Boli", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controllerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.controllerLabel.Location = new System.Drawing.Point(110, -12);
+            this.controllerLabel.Location = new System.Drawing.Point(110, 4);
             this.controllerLabel.Margin = new System.Windows.Forms.Padding(0);
             this.controllerLabel.Name = "controllerLabel";
             this.controllerLabel.Size = new System.Drawing.Size(647, 77);
@@ -134,7 +138,7 @@
             this.ballPositionUpdateLabel.AutoSize = true;
             this.ballPositionUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ballPositionUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.ballPositionUpdateLabel.Location = new System.Drawing.Point(38, 369);
+            this.ballPositionUpdateLabel.Location = new System.Drawing.Point(36, 401);
             this.ballPositionUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.ballPositionUpdateLabel.Name = "ballPositionUpdateLabel";
             this.ballPositionUpdateLabel.Size = new System.Drawing.Size(113, 36);
@@ -147,7 +151,7 @@
             this.ballPositionUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ballPositionUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ballPositionUpdateInput.ForeColor = System.Drawing.Color.Red;
-            this.ballPositionUpdateInput.Location = new System.Drawing.Point(35, 408);
+            this.ballPositionUpdateInput.Location = new System.Drawing.Point(33, 440);
             this.ballPositionUpdateInput.Multiline = true;
             this.ballPositionUpdateInput.Name = "ballPositionUpdateInput";
             this.ballPositionUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -224,7 +228,7 @@
             this.qtrUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.qtrUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtrUpdateInput.ForeColor = System.Drawing.Color.Red;
-            this.qtrUpdateInput.Location = new System.Drawing.Point(201, 408);
+            this.qtrUpdateInput.Location = new System.Drawing.Point(199, 440);
             this.qtrUpdateInput.Multiline = true;
             this.qtrUpdateInput.Name = "qtrUpdateInput";
             this.qtrUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -237,7 +241,7 @@
             this.qtrUpdateLabel.AutoSize = true;
             this.qtrUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtrUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.qtrUpdateLabel.Location = new System.Drawing.Point(175, 369);
+            this.qtrUpdateLabel.Location = new System.Drawing.Point(173, 401);
             this.qtrUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.qtrUpdateLabel.Name = "qtrUpdateLabel";
             this.qtrUpdateLabel.Size = new System.Drawing.Size(190, 36);
@@ -250,7 +254,7 @@
             this.DownUpdateLabel.AutoSize = true;
             this.DownUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.DownUpdateLabel.Location = new System.Drawing.Point(489, 369);
+            this.DownUpdateLabel.Location = new System.Drawing.Point(487, 401);
             this.DownUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.DownUpdateLabel.Name = "DownUpdateLabel";
             this.DownUpdateLabel.Size = new System.Drawing.Size(176, 36);
@@ -263,7 +267,7 @@
             this.downUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.downUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.downUpdateInput.ForeColor = System.Drawing.Color.Red;
-            this.downUpdateInput.Location = new System.Drawing.Point(515, 408);
+            this.downUpdateInput.Location = new System.Drawing.Point(513, 440);
             this.downUpdateInput.Multiline = true;
             this.downUpdateInput.Name = "downUpdateInput";
             this.downUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -276,7 +280,7 @@
             this.toGoUpdateLabel.AutoSize = true;
             this.toGoUpdateLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toGoUpdateLabel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.toGoUpdateLabel.Location = new System.Drawing.Point(672, 369);
+            this.toGoUpdateLabel.Location = new System.Drawing.Point(670, 401);
             this.toGoUpdateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.toGoUpdateLabel.Name = "toGoUpdateLabel";
             this.toGoUpdateLabel.Size = new System.Drawing.Size(181, 36);
@@ -289,7 +293,7 @@
             this.toGoUpdateInput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.toGoUpdateInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toGoUpdateInput.ForeColor = System.Drawing.Color.Red;
-            this.toGoUpdateInput.Location = new System.Drawing.Point(698, 408);
+            this.toGoUpdateInput.Location = new System.Drawing.Point(696, 440);
             this.toGoUpdateInput.Multiline = true;
             this.toGoUpdateInput.Name = "toGoUpdateInput";
             this.toGoUpdateInput.Size = new System.Drawing.Size(125, 44);
@@ -302,13 +306,50 @@
             this.updateConfirm.BackColor = System.Drawing.Color.Aqua;
             this.updateConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.updateConfirm.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateConfirm.Location = new System.Drawing.Point(362, 363);
+            this.updateConfirm.Location = new System.Drawing.Point(360, 395);
             this.updateConfirm.Name = "updateConfirm";
             this.updateConfirm.Size = new System.Drawing.Size(128, 89);
             this.updateConfirm.TabIndex = 33;
             this.updateConfirm.Text = "DONE";
             this.updateConfirm.UseVisualStyleBackColor = false;
             this.updateConfirm.Click += new System.EventHandler(this.updateConfirm_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(291, 355);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(129, 33);
+            this.comboBox1.TabIndex = 34;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // minuteInputLable1
+            // 
+            this.minuteInputLable1.AutoSize = true;
+            this.minuteInputLable1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.minuteInputLable1.Location = new System.Drawing.Point(293, 316);
+            this.minuteInputLable1.Name = "minuteInputLable1";
+            this.minuteInputLable1.Size = new System.Drawing.Size(127, 36);
+            this.minuteInputLable1.TabIndex = 35;
+            this.minuteInputLable1.Text = "Minutes";
+            // 
+            // secondInputLabel1
+            // 
+            this.secondInputLabel1.AutoSize = true;
+            this.secondInputLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.secondInputLabel1.Location = new System.Drawing.Point(435, 316);
+            this.secondInputLabel1.Name = "secondInputLabel1";
+            this.secondInputLabel1.Size = new System.Drawing.Size(128, 36);
+            this.secondInputLabel1.TabIndex = 37;
+            this.secondInputLabel1.Text = "Seconds";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(433, 355);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(129, 33);
+            this.comboBox2.TabIndex = 36;
             // 
             // Form2
             // 
@@ -319,7 +360,13 @@
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(855, 464);
+            this.ClientSize = new System.Drawing.Size(855, 496);
+            this.Controls.Add(this.visitorTeamUpdateLabel);
+            this.Controls.Add(this.homeTeamUpdateLabel);
+            this.Controls.Add(this.secondInputLabel1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.minuteInputLable1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.updateConfirm);
             this.Controls.Add(this.toGoUpdateLabel);
             this.Controls.Add(this.toGoUpdateInput);
@@ -332,14 +379,12 @@
             this.Controls.Add(this.visitorTeamUpdateTolInput);
             this.Controls.Add(this.visitorTeamUpdateScoreLabel);
             this.Controls.Add(this.visitorTeamUpdateInput);
-            this.Controls.Add(this.visitorTeamUpdateLabel);
             this.Controls.Add(this.ballPositionUpdateLabel);
             this.Controls.Add(this.ballPositionUpdateInput);
             this.Controls.Add(this.homeTeamUpdateTolLabel);
             this.Controls.Add(this.homeTeamUpdateTolInput);
             this.Controls.Add(this.homeTeamUpdateScoreLabel);
             this.Controls.Add(this.homeTeamUpdateInput);
-            this.Controls.Add(this.homeTeamUpdateLabel);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(881, 535);
@@ -372,5 +417,9 @@
         protected System.Windows.Forms.Label toGoUpdateLabel;
         public System.Windows.Forms.TextBox toGoUpdateInput;
         private System.Windows.Forms.Button updateConfirm;
+        public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label minuteInputLable1;
+        private System.Windows.Forms.Label secondInputLabel1;
+        public System.Windows.Forms.ComboBox comboBox2;
     }
 }

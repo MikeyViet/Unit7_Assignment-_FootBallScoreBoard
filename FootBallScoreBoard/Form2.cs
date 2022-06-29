@@ -13,6 +13,15 @@ namespace FootBallScoreBoard
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            for (int i = 0; i < 60; i++)
+            {
+                this.comboBox1.Items.Add(i.ToString());
+                this.comboBox2.Items.Add(i.ToString());
+
+            }
+
+            this.comboBox1.SelectedIndex = 59;
+            this.comboBox2.SelectedIndex = 59;
 
         }
 
@@ -48,6 +57,11 @@ namespace FootBallScoreBoard
             frm.Show();
             this.Hide();
 
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
