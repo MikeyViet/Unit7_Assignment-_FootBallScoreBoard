@@ -53,6 +53,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.form2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tccdMascotImageBox)).BeginInit();
@@ -358,6 +359,18 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(547, 723);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(463, 49);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Powered By McMillanites";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // form1BindingSource
             // 
             this.form1BindingSource.DataSource = typeof(FootBallScoreBoard.Form1);
@@ -373,7 +386,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1574, 729);
+            this.ClientSize = new System.Drawing.Size(1574, 775);
+            this.Controls.Add(this.updateControllerButton);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.visitorTeamScore);
@@ -381,7 +396,6 @@
             this.Controls.Add(this.visitorTeamLable);
             this.Controls.Add(this.homeTimeOutLabel);
             this.Controls.Add(this.timerLabel);
-            this.Controls.Add(this.updateControllerButton);
             this.Controls.Add(this.tccdMascotImageBox);
             this.Controls.Add(this.numDown);
             this.Controls.Add(this.numYardsToGo);
@@ -439,6 +453,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
