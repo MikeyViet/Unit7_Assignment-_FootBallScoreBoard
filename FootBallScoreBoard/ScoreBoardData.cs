@@ -71,21 +71,29 @@ namespace FootBallScoreBoard
         /// <param name="Controller">The update controller Form</param>
         public static void loadTimeToScoreBoard(Form1 OGScoreBoard, Form2 Controller)
         {
+            // Split the timer label with format of 00:00 into minutes and second and store into number array
             string[] timerNumbers = OGScoreBoard.timerLabel.Text.Split(':');
 
+            // store the numbers into the data class
             ScoreBoardData.Minutes = timerNumbers[0];
             ScoreBoardData.Seconds = timerNumbers[1];
 
+            // populate the drop down list with seconds
             for (int i = 0; i < 60; i++)
             {
                 Controller.comboBox2.Items.Add(i.ToString());
             }
+
+            // set the selected index to the current second
             Controller.comboBox2.SelectedIndex = int.Parse(timerNumbers[1]);
 
+            // populate the drop down list with minutes
             for (int i = 0; i <= 15; i++)
             {
                 Controller.comboBox1.Items.Add(i.ToString());
             }
+
+            // set the selected index to the current minute
             Controller.comboBox1.SelectedIndex = int.Parse(timerNumbers[0]);
         }
 
