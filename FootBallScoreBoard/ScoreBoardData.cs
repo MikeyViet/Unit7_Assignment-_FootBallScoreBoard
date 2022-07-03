@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace FootBallScoreBoard
 {
+    /// <summary>
+    /// The score board data.
+    /// </summary>
     internal static class ScoreBoardData
     {
         // All the numbers needed to populate the Football ScoreBoard
@@ -36,6 +39,7 @@ namespace FootBallScoreBoard
             controllerBoard.downUpdateInput.Text = ScoreBoardData.CurrentNumberOfDown;
             controllerBoard.toGoUpdateInput.Text = ScoreBoardData.NumberOfYardsForFirstDown;
         }
+
 
         /// <summary>
         /// Overloaded function that will load the data from the ScoreBoardData class into the

@@ -25,6 +25,12 @@ namespace FootBallScoreBoard
             this.button2.Enabled = false;
         }
 
+        /// <summary>
+        /// Creates new Form2 object and passes to the load data and time scoreboard functions.
+        /// Shows the form after complete.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
         private void updateControllerButton_Click(object sender, EventArgs e)
         {
 
@@ -43,6 +49,11 @@ namespace FootBallScoreBoard
 
         }
 
+        /// <summary>
+        /// Sets the minutes of the label and makes them tick
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
         private void timer1_Tick(object sender, EventArgs e)
         {
             string newMinute = "";
@@ -62,6 +73,11 @@ namespace FootBallScoreBoard
 
         }
 
+        /// <summary>
+        /// Loads the minutes and seconds into the label and starts the timer
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -79,6 +95,11 @@ namespace FootBallScoreBoard
 
         }
 
+        /// <summary>
+        /// Stops the timer
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The e.</param>
         private void button2_Click(object sender, EventArgs e)
         {
             this.button2.Enabled = false;
